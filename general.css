@@ -8,6 +8,7 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
+  scroll-behavior: smooth;
 }
 ::-moz-selection {
   /* Code for Firefox */
@@ -41,6 +42,7 @@ ul {
 h1 {
   font-size: clamp(1.8rem, 5vw, 2.4rem);
   margin-bottom: 0px;
+  margin-top: 50px;
 }
 h2 {
   font-size: clamp(1.4rem, 4vw, 1.8rem);
@@ -89,6 +91,12 @@ button:hover {
     width: 100%;
   }
 }
+@media (max-width: 768px) {
+  .cta-button-header {
+    margin-top: 30px;
+  }
+}
+
 @media (max-width: 768px) {
   .final-cta-button-div {
     width: 80vw;
@@ -301,4 +309,30 @@ footer a {
 /* for testing purposed to ensure the animation lined up correctly */
 .test {
   background: red !important;
+}
+
+/* Startup animation */
+body {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Scroll reveal base */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease-out;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
 }

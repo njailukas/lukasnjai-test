@@ -2,6 +2,9 @@
   html {
     background-color: #121212;
   }
+  .home-card-cont {
+    padding-bottom: 50px;
+  }
   .cta-button-div {
     display: flex;
     justify-content: center;
