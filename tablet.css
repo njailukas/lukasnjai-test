@@ -16,7 +16,7 @@
   }
   .visual-section-cont {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     height: 230px;
   }
   .visual-section-right {
@@ -34,8 +34,8 @@
     text-align: center;
   }
   .watch-video-btn {
-    position: absolute;
-    margin-top: 160px;
+    margin-bottom: 50px;
+    margin-top: 50px;
   }
   .home-card-cont {
     margin-top: 50px;

@@ -146,6 +146,12 @@ button:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.watch-video-btn {
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
 .video-section h3 {
   margin-bottom: 0px;
